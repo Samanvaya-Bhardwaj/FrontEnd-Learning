@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<style>
+body{
+    color: hsl(0, 8%, 5%);
+    margin: 0px;
+    padding: 0px;
+    background: url(image/background.jpg.jpg);
+}
+
+.left{
+    position: absolute;
+    left: 34px;
+    top: 18px;
+    display: inline-block;
+ 
+}
+ .left img{
+     width: 150px
+ }
+ .left div{
+     text-align: center;
+     line-height: 0px;
+     font-size: 30px;
+     color: rgb(26, 241, 19);
+ }
+
+.mid{
+    display: block;
+    width: 42%;
+    margin: 18px auto;
+    
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li {
+    color: rgb(23, 180, 219);
+   display: inline-block;
+   font-size: 20px;
+}
+.navbar li a { 
+  color: rgb(251, 84, 18);
+  text-decoration: none;
+  padding: 30px 20px;
+}
+.navbar li a:hover, .navbar li a.active { 
+ text-decoration: underline;
+ color: rgb(180, 16, 235);
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 18px;
+    display: inline-block;
+}
+.btn{
+    margin-top: 20px;
+    background-color: whitesmoke;
+    color:black;
+    padding: 6px 16px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: cornflowerblue;
+}
+.container{
+    display: flex;
+}
+.box{
+              border: 1px solid gray;
+              background-color:white;
+              margin: 4px;
+              padding: 10px;
+              border-radius: 1px;
+              display: inline-block;
+              width: 350px;
+              height: 350px;
+              box-sizing: border-box;
+          }
+.box2{
+    padding: 10px;
+    margin-left: 10px;
+    display: block;
+    
+}
+</style>
+<body>
+    <header class="header" style="background-color:black;" >
+        <div class="left">
+         <img src="" alt="">
+         <div style="padding-top: 10px; " >Product Page</div>
+        </div>
+  
+       <div class="mid">
+            <ul class="navbar">
+              <li> <a href="#" class="active" >Product</a> </li>
+              <li> <a href="#">About Us</a> </li>
+              <li> <a href="#" target="_blank" >Shop Here</a> </li>
+              <li> <a href="#" target="_blank" >Pay point</a> </li>  
+          </ul>
+       </div>
+       <div class="right">
+           <button class="btn">Call us Now</button>
+           <button class="btn">E-mail us</button>  
+       </div>
+    </header>
+    <div class="container">
+        <div class="box">
+            <img src="/t-shirt.jpg" height="300px" width="300px" alt="t-shirt">
+        </div>
+        <div class="box2">
+            <p> <b> Red Cotton T-Shirt </b></p>
+            <p>T-Shirts/ Shirts</p>
+            Rs. 400 &nbsp; <strike>Rs. 800</strike> &nbsp; <span style="color: green;" > 50% Off</span>
+            <p>This is the best t-shirt you will ever buy from internet till now.</p>
+            <p> <b> Color </b> - Red &nbsp;</p>
+             <p> <b> Available </b>- 3</p>
+            <span> <strong> Size:- </strong>
+                Small <input type="radio" name="size" id="Small"> Medium <input type="radio" name="size" id="Medium">  Large <input type="radio" name="size" id="Large">XL <input type="radio" name="size" id="xtralrg">
+            </span>
+            <p> <strong> Quantity:- </strong>
+                <select name="card_type" id="card_type" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </p>
+            <button class="btn">Buy Now</button>
+           <button class="btn">Add to Cart</button>  
+        </div>
+    </div>
+</div>
+</body>
+</html>
